@@ -52,6 +52,11 @@ qa.prompt([
       "Mozilla Public License 2.0",
     ],
   },
+  {
+    type: "input",
+    message: "How to contact you in case of the questions, provide your email etc. ",
+    name: "questions",
+  },
 ]).then(function (response) {
   switch (response.license) {
     case "MIT":
@@ -91,6 +96,7 @@ qa.prompt([
   - [Contribution](#contribution)
   - [Test](#test)
   - [License](#license)
+  - [Questions](#questions)
   
   ## Dependencies
   ${response.dependancies}
@@ -110,13 +116,20 @@ qa.prompt([
   ## License
   
   This project is licensed under the ${response.license} License - see the LICENSE.md file for details
+  
+  ## Questions 
+  ${response.questions}
+
   `;
 
-  fs.writeFile("README.md.generated", generated_readme, (err) =>
+
+
+  const fileSuffix = process.hrtime.bigint().toString().slice(2, 7);
+  fs.writeFile(`./generated_readmes/README${fileSuffix}.md`, generated_readme, (err) =>
     err
       ? console.error(err)
       : console.log(
-          `README.md.generated has been generated. Written ${generated_readme.length} symbols`
+          `README${fileSuffix}.md has been generated. Written ${generated_readme.length} symbols`
         )
   );
 });
