@@ -1,13 +1,13 @@
 
-  # 123231
+  # Readme_Generator
   
-  [![License: ODbL](https://img.shields.io/badge/License-PDDL-brightgreen.svg)](https://opendatacommons.org/licenses/pddl/)
+  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
   
-  213231
+  This app will streamline generation of the Readme ifle
   
   ## Description
   
-  342342
+  User will be prompted to enter information related to the project, as well as select the appropriate licence. App will generate readme file and add icon of the license
   
   ## Table of Contents
   
@@ -17,23 +17,28 @@
   - [Contribution](#contribution)
   - [Test](#test)
   - [License](#license)
+  - [Questions](#questions)
   
   ## Dependencies
-  456564
+  node.js and inquirer module
   
   ## Installing
-  3434
+  npm install
   
   ## Usage
-  534534
+  app can be used for personal and commercial purpose
   
   ## Contribution 
-  345345
+  feel free to fork, clone and amend as required
   
   ## Test 
-  213434
+  to test clone repo, install node. js and run nmp install
   
   ## License
   
-  This project is licensed under the Public Domain Dedication and License (PDDL) License - see the LICENSE.md file for details
+  This project is licensed under the Apache license 2.0 License - see the LICENSE.md file for details
+  
+  ## Questions 
+  mihhail.odnolko@gmail.com
+
   
